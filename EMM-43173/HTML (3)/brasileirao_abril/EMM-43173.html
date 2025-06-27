@@ -1,0 +1,580 @@
+<!-- %%[
+  VAR @email
+  SET @email = Base64Encode(emailaddr)
+  Set @subjectLine = "Brasileirão ao vivo! Assista na SKY+"
+  Set @preHeader = "Acompanhe todos os jogos no Sportv, Premiere, Globo e Record!"
+  
+  
+  var @currentTime
+  set @currentTime  = Now()
+  set @currentyear =  format(@currentTime,"yyyy")
+  SET @num_ticket = "43173"
+  ContentBlockByKey("BR-static_urls")
+
+]%% -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="shortcut icon"
+      href="
+https://d3rk23u3ghg22e.cloudfront.net/image/emm-basic-images/favicon/sky_favicon.ico"
+    />
+    <title>Brasileirão ao vivo! Assista na SKY+</title>
+
+    <style type="text/css">
+      /* CLIENT-SPECIFIC STYLES */
+      body,
+      table,
+      td,
+      a {
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        font-family: Tahoma, Arial, sans-serif;
+      }
+
+      table,
+      td {
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+      }
+
+      img {
+        -ms-interpolation-mode: bicubic;
+      }
+
+      /* RESET STYLES */
+      img {
+        border: 0;
+        outline: none;
+        text-decoration: none;
+      }
+
+      table {
+        border-collapse: collapse !important;
+      }
+
+      body {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+      }
+
+      /* iOS BLUE LINKS */
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+
+      /* ANDROID CENTER FIX */
+      div[style*="margin: 16px 0;"] {
+        margin: 0 !important;
+      }
+    </style>
+  </head>
+
+  <body style="margin: 0; padding: 0">
+    <span
+      class="preheader"
+      style="
+        display: none;
+        font-size: 0px;
+        line-height: 0px;
+        max-height: 0px;
+        max-width: 0px;
+        opacity: 0;
+        overflow: hidden;
+        visibility: hidden;
+        mso-hide: all;
+      "
+    >
+      Acompanhe todos os jogos no Sportv, Premiere, Globo e Record!
+    </span>
+
+    <center>
+      <table
+        width="100%"
+        border="0"
+        cellpadding="0"
+        cellspacing="0"
+        bgcolor="#ffffff"
+        role="presentation"
+        style="
+          border-collapse: collapse;
+          mso-table-lspace: 0pt;
+          mso-table-rspace: 0pt;
+          margin: 0 auto;
+        "
+      >
+        <tr>
+          <td style="border-collapse: collapse" align="center" valign="top">
+            <table
+              align="center"
+              width="100%"
+              bgcolor="#08192b"
+              cellpadding="0"
+              cellspacing="0"
+              border="0"
+              style="
+                border-collapse: collapse;
+                mso-table-lspace: 0pt;
+                mso-table-rspace: 0pt;
+              "
+            >
+              <tr>
+                <td
+                  style="
+                    border-collapse: collapse;
+                    mso-table-lspace: 0pt;
+                    mso-table-rspace: 0pt;
+                    color: #fff;
+                    font-family: Helvetica, Arial, sans-serif;
+                    font-size: 10px;
+                    line-height: 14px;
+                    font-weight: normal;
+                    text-decoration: none;
+                    text-align: center;
+                    padding: 10px 0px 10px 0px;
+                    background-color: #fff;
+                  "
+                >
+                  <a
+                    href="%%view_email_url%%"
+                    target="_blank"
+                    style="
+                      font-family: Helvetica, Arial, sans-serif;
+                      font-size: 10px;
+                      color: #000;
+                      font-weight: bold;
+                    "
+                  >
+                    Se tiver dificuldades em visualizar este e-mail, pode
+                    visualizá-lo online aqui.
+                  </a>
+                </td>
+              </tr>
+            </table>
+            <!-- ************* INSIRA DEPOIS DAQUI ************* -->
+
+            <table
+              width="646"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              style="margin: 0 auto"
+            >
+              <tr>
+                <td width="646" style="background-color: #fff">
+                  <img
+                    width="646"
+                    src="https://d3rk23u3ghg22e.cloudfront.net/image/BR/OTT/EFlyer/EMM-42601/header.png"
+                    style="display: block"
+                    alt="SKY+ para cada mood um play"
+                    usemap="#header-map"
+                  />
+                  <map name="header-map">
+                    <area
+                      shape="rect"
+                      coords="204,7,310,45"
+                      href="%%=RedirectTo(@SKY_login_url)=%%"
+                      target="_blank"
+                      alt="Login"
+                    />
+                    <area
+                      shape="rect"
+                      coords="332,7,421,42"
+                      href="%%view_email_url%%"
+                      target="_blank"
+                      alt="Ver na web"
+                    />
+                    <area
+                      shape="rect"
+                      coords="442,9,512,42"
+                      href="%%=RedirectTo(@SKY_help_url)=%%"
+                      target="_blank"
+                      alt="Ajuda"
+                    />
+                  </map>
+                </td>
+              </tr>
+            </table>
+            <table
+              width="646 "
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              style="margin: 0 auto"
+            >
+              <tr>
+                <td width="646" style="background-color: #fff">
+                  <p
+                    style="
+                      margin: 0;
+                      font-family: 'Segoe UI', Tahoma, Geneva, Verdana,
+                        sans-serif;
+                      font-size: 20px;
+                      font-weight: normal;
+                      padding-top: 20px;
+                      padding-left: 39px;
+                      padding-bottom: 15px;
+                    "
+                  >
+                    <b>Olá, %%FIRSTNAME%%!</b>
+                  </p>
+                  <p
+                    style="
+                      margin: 0;
+                      font-family: 'Segoe UI', Tahoma, Geneva, Verdana,
+                        sans-serif;
+                      font-size: 18px;
+                      padding-top: 10px;
+                      padding-left: 39px;
+                      padding-right: 44px;
+                      padding-bottom: 15px;
+                      text-align: justify;
+                    "
+                  >
+                    A emoção do Brasileirão Série A já começou, e você, cliente
+                    SKY+, não perde nenhum lance! Acompanhe os principais jogos
+                    ao vivo, torça a cada gol e fique por dentro de tudo na
+                    disputa pelo título.
+                    <br />
+                    Assista tudo ao vivo pela SKY+ nos canais:
+                  </p>
+                </td>
+              </tr>
+            </table>
+            <table
+              width="646"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              style="margin: 0 auto"
+            >
+              <tr>
+                <td width="646" style="background-color: #fff">
+                  <img
+                    width="646"
+                    src="https://d3rk23u3ghg22e.cloudfront.net/image/BR/OTT/EFlyer/EMM-42601/body.png"
+                    style="display: block"
+                    alt="se joga no sinal aberto Telecine!"
+                  />
+                </td>
+              </tr>
+            </table>
+
+            <table
+              width="646"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              style="margin: 0 auto"
+            >
+              <tr>
+                <td width="646" style="background-color: #fff">
+                  <a href="%%=RedirectTo(@SKY_login_url)=%%">
+                    <img
+                      width="646"
+                      src="https://d3rk23u3ghg22e.cloudfront.net/image/BR/OTT/EFlyer/EMM-42601/button.png"
+                      style="display: block; padding-bottom: 10px"
+                      alt="se joga no sinal aberto Telecine!"
+                    />
+                  </a>
+                </td>
+              </tr>
+            </table>
+
+            <!---- IOS/ANDROIND CTA'S---->
+            <table
+              width="646"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              style="margin: 0 auto"
+            >
+              <tr>
+                <td
+                  width="329"
+                  style="background-color: #fff; padding-bottom: 50px"
+                >
+                  <a
+                    href="%%=RedirectTo(@SKY_android)=%%"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="https://d3rk23u3ghg22e.cloudfront.net/image/BR/OTT/EFlyer/EMM-38632/app.png"
+                      style="display: block"
+                      alt="Canais ao vivo com os melhores jogos, filmes e mais te esperam"
+                    />
+                  </a>
+                </td>
+                <td
+                  width="329"
+                  style="background-color: #fff; padding-bottom: 50px"
+                >
+                  <a
+                    href="%%=RedirectTo(@SKY_apple)=%%"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="https://d3rk23u3ghg22e.cloudfront.net/image/BR/OTT/EFlyer/EMM-38632/ios.png"
+                      style="display: block"
+                      alt="Canais ao vivo com os melhores jogos, filmes e mais te esperam"
+                    />
+                  </a>
+                </td>
+              </tr>
+            </table>
+
+            <table
+              width="646"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              style="margin: 0 auto"
+            >
+              <tr>
+                <td width="646" style="background-color: #f50921">
+                  <a
+                    href="%%=RedirectTo(@SKY_stage_home_url)=%%"
+                    title="É streaming. É TV ao vivo. É SKY+."
+                    target="_blank"
+                  >
+                    <img
+                      src="https://d3rk23u3ghg22e.cloudfront.net/image/BR/OTT/EFlyer/EMM-42601/SKY.png"
+                      style="max-width: 600px; padding: 30px 0 10px 230px"
+                      alt="Do esporte aos festivais, tem muita programação ao vivo na SKY+!"
+                    />
+                  </a>
+                  <p
+                    style="
+                      color: white;
+                      margin: 0;
+                      padding: 0 0 0px 160px;
+                      font-size: 20px;
+                      font-weight: bold;
+                      padding-bottom: 30px;
+                    "
+                  >
+                    É streaming. É TV ao vivo. É SKY+.
+                  </p>
+                </td>
+              </tr>
+            </table>
+
+            <!---- FOOTER ---->
+
+            <table
+              width="646"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              style="margin: 0 auto"
+            >
+              <tr>
+                <td
+                  style="
+                    background-color: #ef081a;
+                    font-size: 11px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    border-top: white solid 2px;
+                  "
+                ></td>
+              </tr>
+            </table>
+            <table
+              width="646"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              style="margin: 0 auto"
+            >
+              <tbody>
+                <tr
+                  style="
+                    background-color: #ef081a;
+                    font-size: 11px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    border-top: white solid 1px;
+                  "
+                >
+                  <td>
+                    <img
+                      src="https://d3rk23u3ghg22e.cloudfront.net/image/BR/OTT/EFlyer/EMM-42601/faqlogo.png"
+                      alt="Imagem Acesso"
+                      style="padding: 5px 0 5px 170px; width: 15px"
+                    />
+                  </td>
+                  <td>
+                    <p
+                      style="
+                        margin: 0;
+                        font-weight: normal;
+                        text-align: center;
+                        font-size: 13px;
+                        margin: 0;
+                        padding: 11px 183px 14px 0;
+                        color: #fff;
+                      "
+                    >
+                      Para mais informações, acesse o
+                      <a
+                        href="%%=RedirectTo(@SKY_help_url)=%%"
+                        target="_blank"
+                        style="color: #009fe3"
+                        title="FAQ"
+                      >
+                        FAQ
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table
+              width="646"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              style="margin: 0 auto"
+            >
+              <tr
+                style="
+                  background-color: #ef081a;
+                  font-size: 12px;
+                  font-family: Arial, Helvetica, sans-serif;
+                "
+              >
+                <td>
+                  <p
+                    style="
+                      color: #fff;
+                      text-align: center;
+                      padding: 20px 20px 0px 20px;
+                      margin: 0;
+                      text-align: center;
+                      line-height: 1.5;
+                    "
+                  >
+                    Conteúdo disponível de acordo com o pacote contratado ou
+                    recarga ativa.
+                    <br />
+                    Para mais informações, consulte o site da SKY+. Se você
+                    deseja parar de receber estes e-mails,
+                    <a
+                      href="%%unsub_center_url%%"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style="color: #fff"
+                      title="Cancelar inscrição"
+                    >
+                      clique aqui
+                    </a>
+                    para cancelar. A programação sugerida pode depender da
+                    contratação específica de produtos feita pelo cliente e pode
+                    ser alterada sem aviso prévio.
+                    <br />
+
+                    <br />
+                    Consulte informações do seu plano, restrições, termos e
+                    condições em
+                    <a
+                      href=" https://www.skymais.com.br"
+                      target="_blank"
+                      style="color: #fff"
+                    >
+                      www.skymais.com.br
+                    </a>
+                    .
+                    <br />
+                    ® Todos os direitos reservados, 2025. Todas as marcas SKY+ e
+                    qualquer propriedade intelectual inserida nelas são de
+                    propriedade da SKY International AG e usadas pela
+                    <br />
+                    STREAMCO DISTRIBUIÇÃO DE VÍDEO BRASIL LTDA. mediante
+                    licença.
+                  </p>
+                </td>
+              </tr>
+            </table>
+
+            <table
+              width="646"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              style="margin: 0 auto"
+            >
+              <tr style="background-color: #ef081a">
+                <td style="width: 280px"></td>
+                <td style="width: 500px; padding: 10px; padding-left: 100px">
+                  <a
+                    href="%%=RedirectTo(@SKY_tw_url)=%%"
+                    title="Twitter"
+                    style="text-decoration: none"
+                    target="_blank"
+                  >
+                    <img
+                      src="https://d3rk23u3ghg22e.cloudfront.net/image/BR/OTT/EFlyer/EMM-42601/twitter.jpg"
+                      alt="Twitter"
+                    />
+                  </a>
+                  <a
+                    href="%%=RedirectTo(@SKY_ig_url)=%%"
+                    title="Instagram"
+                    style="text-decoration: none"
+                    target="_blank"
+                  >
+                    <img
+                      src="https://d3rk23u3ghg22e.cloudfront.net/image/BR/OTT/EFlyer/EMM-42601/instagram.jpg"
+                      alt="Instagram"
+                    />
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!--rodape trackeamento-->
+        <custom name="opencounter" type="tracking">
+          <custom name="usermatch" type="tracking">
+            <span style="display: none; color: white; width: 0; height: 0">
+              Este e-mail foi enviado por:
+              <b>%%Member_Busname%%</b>
+              <br />
+              %%Member_Addr%% %%Member_City%%, %%Member_State%%,
+              %%Member_PostalCode%%, %%Member_Country%%
+              <a
+                href="%%profile_center_url%%"
+                alias="Update Profile"
+                style="text-decoration: none"
+              >
+                <span style="color: #fff; text-decoration: none">
+                  Atualizar perfil
+                </span>
+              </a>
+            </span>
+            <span
+              style="
+                display: block;
+                width: 650px !important;
+                max-width: 650px;
+                height: 1px;
+              "
+              class="gmailfix"
+            ></span>
+          </custom>
+        </custom>
+      </table>
+    </center>
+  </body>
+</html>
